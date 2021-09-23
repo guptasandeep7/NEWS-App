@@ -1,13 +1,9 @@
-package com.example.news;
+package com.sandeepgupta.NEWS;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.speech.tts.TextToSpeech;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -20,29 +16,28 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.sandeepgupta.NEWS.R;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Map;
 
-public class TechnologyFragment extends Fragment {
+public class ScienceFragment extends Fragment {
     private static final String URL =
-            "https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=35eced8c13cd4021917025285f9c55c4";
+            "https://newsapi.org/v2/top-headlines?country=in&category=science&apiKey=35eced8c13cd4021917025285f9c55c4";
     public NewsAdapter adapter;
     public ListView covidListView;
     TextView loading;
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.news_fragment, container, false);
 
-        loading = (TextView)rootView.findViewById(R.id.loading);
 
+        loading = (TextView)rootView.findViewById(R.id.loading);
 
         RequestQueue queue = Volley.newRequestQueue(getContext());
 

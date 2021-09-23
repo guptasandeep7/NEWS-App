@@ -1,4 +1,4 @@
-package com.example.news;
+package com.sandeepgupta.NEWS;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -16,7 +16,7 @@ public class FixedTabPagerAdapter extends FragmentStatePagerAdapter {
             case 0:
                 return new NewsFragment();
             case 1:
-                return new RegisterFragment();
+                return new SportsFragment();
             case 2:
                 return new EntertainmentFragment();
             case 3:

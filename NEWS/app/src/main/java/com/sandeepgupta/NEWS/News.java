@@ -1,4 +1,4 @@
-package com.example.news;
+package com.sandeepgupta.NEWS;
 
 public class News {
 //title des url urltoimage publishat content
